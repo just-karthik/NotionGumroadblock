@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style> 
+div {
+  width: 80%;
+  height: 80%;
+  box-shadow: 10px 10px 10px 0px #00000020;
+  hover: -25px
+  }
+#move {
+position: relative;
+top: 0;
+transition: top ease 1s;
+}
+#move:hover {
+top: -15px;
+}
+
+</style>
 </head>
 <body>
-
-<a href="default.asp"><img src="SMP.png" alt="Girl in a jacket" width="300" height="400"></a>
-
+<div>
+<a href="default.asp"><img id="move" src="SMP.png" alt="Girl in a jacket"></a>
+</div>
 </body>
 </html>
