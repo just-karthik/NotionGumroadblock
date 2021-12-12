@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+<style> 
+div {
+  width: 80%;
+  height: 80%;
+  box-shadow: 10px 10px 10px 0px #00000020;
+  hover: -25px
+  }
+#move {
+position: relative;
+top: 0;
+transition: top ease 1s;
+}
+#move:hover {
+top: -15px;
+}
+
+</style>
 </head>
 <body>
 <div>
-<div class="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8">
-  <div>
-    <img src="SMP.png" >
-  </div>
-  <div class="col-start-3">
-    <img src="/mountains-2.jpg" alt="">
-  </div>
-  <div>
-    <img src="/mountains-3.jpg" alt="">
-  </div>
-  <div>
-    <img src="/mountains-4.jpg" alt="">
-  </div>
-  <div class="row-start-1 col-start-2 col-span-2">
-    <img src="/mountains-5.jpg" alt="">
-  </div>
-</div>
+<a href="default.asp"><img id="move" src="SMP.png" alt="Girl in a jacket" width="300" height="400"></a>
 </div>
 </body>
 </html>
